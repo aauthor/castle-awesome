@@ -271,7 +271,7 @@ globalkeys = awful.util.table.join(
                   awful.util.getdir("cache") .. "/history_eval")
               end),
     awful.key({ modkey }, "p", function() menubar.show() end),
-    awful.key({ modkey, "Shift",  }, "F2",    function ()
+    awful.key({ modkey }, "F2",    function ()
       awful.prompt.run({ prompt = "Rename tab: ", text = awful.tag.selected().name, },
       mypromptbox[mouse.screen].widget,
       function (s)
